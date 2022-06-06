@@ -52,30 +52,37 @@ public class MainActivity extends BaseActivity {
     public void onItemClick(View itemView, int position) {
         switch (position) {
             case 0: {
+                //Item中的横竖菜单
                 startActivity(new Intent(this, MenuActivity.class));
                 break;
             }
             case 1: {
+                //Item的拖拽和侧滑删除
                 startActivity(new Intent(this, MoveActivity.class));
                 break;
             }
             case 2: {
+                //添加Header和Footer
                 startActivity(new Intent(this, HeaderViewActivity.class));
                 break;
             }
             case 3: {
+                //下拉刷新和加载更多
                 startActivity(new Intent(this, RefreshLoadActivity.class));
                 break;
             }
             case 4: {
+                //和滑动布局嵌套
                 startActivity(new Intent(this, NestedActivity.class));
                 break;
             }
             case 5: {
+                //二级列表
                 startActivity(new Intent(this, ExpandableActivity.class));
                 break;
             }
             case 6: {
+                //Sticky分组效果
                 startActivity(new Intent(this, GroupActivity.class));
                 break;
             }

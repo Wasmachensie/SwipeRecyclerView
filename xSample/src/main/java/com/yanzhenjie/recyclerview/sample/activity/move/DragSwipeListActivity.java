@@ -65,7 +65,9 @@ public class DragSwipeListActivity extends BaseDragActivity {
             @Override
             public boolean onItemMove(RecyclerView.ViewHolder srcHolder, RecyclerView.ViewHolder targetHolder) {
                 // 不同的ViewType不能拖拽换位置。
-                if (srcHolder.getItemViewType() != targetHolder.getItemViewType()) return false;
+                if (srcHolder.getItemViewType() != targetHolder.getItemViewType()) {
+                    return false;
+                }
 
                 // 真实的Position：通过ViewHolder拿到的position都需要减掉HeadView的数量。
                 int fromPosition = srcHolder.getAdapterPosition() - mRecyclerView.getHeaderCount();

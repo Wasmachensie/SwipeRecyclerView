@@ -59,7 +59,9 @@ public class DragTouchListActivity extends BaseDragActivity {
         @Override
         public boolean onItemMove(RecyclerView.ViewHolder srcHolder, RecyclerView.ViewHolder targetHolder) {
             // 不同的ViewType不能拖拽换位置。
-            if (srcHolder.getItemViewType() != targetHolder.getItemViewType()) return false;
+            if (srcHolder.getItemViewType() != targetHolder.getItemViewType()) {
+                return false;
+            }
 
             int fromPosition = srcHolder.getAdapterPosition();
             int toPosition = targetHolder.getAdapterPosition();

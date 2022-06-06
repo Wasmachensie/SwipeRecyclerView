@@ -38,6 +38,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 /**
  * Created by Zhenjie Yan on 1/30/19.
+ * 二级列表的例子.
  */
 public class ListActivity extends AppCompatActivity {
 

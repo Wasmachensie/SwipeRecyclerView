@@ -45,6 +45,7 @@ public class MoveActivity extends BaseActivity {
     public void onItemClick(View itemView, int position) {
         switch (position) {
             case 0: {
+                //Recyclerview
                 startActivity(new Intent(this, DragSwipeListActivity.class));
                 break;
             }
